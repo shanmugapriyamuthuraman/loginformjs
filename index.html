@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<script src="https://code.iconify.design/iconify-icon/1.0.0-beta.3/iconify-icon.min.js"></script>
+	<style>
+	
+	</style>
+</head>
+<body>
+<div class="container">
+	<div class="form-container sign-up-container">
+	<form class="form-control">
+		<h1>Facebook</h1>
+		<div class="box1">
+			<input type="text" value="" placeholder="Mobile number or email address" id="name">
+			<p id="para"> </p>
+			<!-- <iconify-icon icon="prime:times"></iconify-icon> -->
+			<!-- <iconify-icon icon="material-symbols:check-small"></iconify-icon> -->
+		</div>
+		<div class="box1">
+			<input type="password" value="" placeholder="Password" id="password">
+			<p id="para1"> </p>
+			<!-- <iconify-icon icon="prime:times"></iconify-icon> -->
+			<!-- <iconify-icon icon="material-symbols:check-small"></iconify-icon> -->
+		</div>
+		<div class="box1">
+		<button onClick="success()" id="login">Log In</a>
+		</div><hr>
+		<div class="box2">
+			<a href="file:///F:/fabevy/practice/loginform/logincreateaccount.html" id="create">create new account</a>
+		</div>
+	</form>
+	</div>
+</div>	
+	<script>
+		let btn=document.getElementById("login")
+		login.addEventListener("click",event)
+		function event(){
+			let input1=document.getElementById("name").value
+			let input2=document.getElementById("password").value
+			if(input1==""){
+				let error=document.getElementById("para");
+				error.innerHTML="please enter your email";
+				error.style.color="red";
+			}
+			else if(input2==" "){
+				let error1=document.getElementById("para1");
+				error1.innerHTML="please enter your password";
+				error1.style.color="red";
+			}
+			
+			}
+			function success(){
+			    let suc1=document.getElementById("name").value
+			    let suc2=document.getElementById("password").value
+				 if((suc1!=="")&&(suc2!=="")){
+				window.location.href="file:///F:/fabevy/practice/loginform/loginsumbitpage.html"
+			}
+			}
+			
+			
+			
+	</script>
+</body>
+</html>
